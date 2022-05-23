@@ -1,0 +1,129 @@
+#contact {
+  background: hsl(231, 69%, 60%);
+}
+
+.container-contact {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.container-contact p {
+  font-size: .7em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  letter-spacing: 4px;
+  margin-bottom: 2.4em;
+}
+
+.container-contact h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #f7f7f7;
+  margin-bottom: 1em;
+}
+
+.input-contact {
+  display: flex;
+  gap: .8em;
+}
+
+.input-contact>div:first-of-type {
+  position: relative;
+  width: 100%;
+}
+
+.container-check {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top:-.1em; bottom: -1em; left: -.1em; right: -.1em;
+  border-radius: 5px;
+  transition-duration: .4s;
+}
+
+.container-check.error, .icon.error{
+  background: hsl(0, 94%, 66%);
+  opacity: 1;
+}
+
+.container-check.sucess, .icon.sucess {
+  background: hsl(120, 67%, 54%);
+  opacity: 1;
+}
+
+.text-animation {transition-duration: 1s;} 
+
+.text-animation.on {color: transparent;}
+
+.icon {
+  position: absolute;
+  top: 50%; right: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+  z-index: 50;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition-duration: .4s;
+}
+
+.icon svg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: .2em;
+  fill: #f7f7f7;
+}
+
+.icon span {
+  display: none;
+  font-size: .8em;
+  color: #f7f7f7;
+} 
+
+.icon.error span {
+  display: block;
+}
+
+.icon.sucess svg {
+  display: block;
+}
+
+.container-check span {
+  position: absolute;
+  bottom: .5em; left: 1em;
+  font-size: .5em;
+  font-weight: 500;
+  color: #f7f7f7;
+  font-style: italic;
+}
+
+.input-contact input{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 1em;
+  z-index: 10;
+}
+
+input::placeholder {
+  color: hsl(229, 8%, 60%, .5);
+}
+
+@media (max-width: 500px) {
+  .input-contact {
+    flex-direction: column;
+  }
+
+  .input-contact .btn {
+    margin-top: 1em;
+  }
+}
+

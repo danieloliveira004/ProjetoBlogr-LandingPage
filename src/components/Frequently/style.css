@@ -1,0 +1,65 @@
+#frequently {
+  margin-top: 8em;
+  margin-bottom: 10em;
+}
+
+.container-frequently {
+  padding-top: 0.5em;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.list-questions {border-bottom: 1px solid hsl(229, 8%, 60%, .4);}
+
+.list-questions:first-of-type {border-top: 1px solid hsl(229, 8%, 60%, .4);}
+
+.questions {
+  position: relative;
+  font-size: 1.1em;
+  color: hsl(229, 31%, 21%);
+  padding: 1em 0;
+  cursor: pointer;
+  transition-duration: .4s;
+}
+
+.questions:hover {color: hsl(0, 94%, 66%);}
+
+.questions svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  stroke: #5267DF;
+  transition-duration: .5s;
+}
+
+.questions.open svg {
+  stroke:hsl(0, 94%, 66%);
+  transform: rotate(180deg) translateY(5px);
+  
+}
+
+.awsers {
+  font-size: 1em;
+  line-height: 1.4em;
+  /* ANIMATIONS */
+  max-height: 0;
+  height: fit-content;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.awsers.open {
+  max-height: 200px;
+}
+
+.awsers p {
+  color: hsl(229, 31%, 21%, .7);
+  padding-bottom: 1em;
+}
+
+.frequently-more-ifo {
+  margin-top: 3.5em;
+  text-align: center;
+} 

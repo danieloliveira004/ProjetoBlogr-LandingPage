@@ -1,0 +1,25 @@
+#extension {
+  margin-top: 8em;
+}
+
+.card-extension {
+  margin-top: 1.8em;
+  min-height: 380px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2em;
+}
+
+.card-extension>div:nth-of-type(2) {align-self: center;}
+.card-extension>div:nth-of-type(3) {align-self: end;}
+
+@media (max-width: 800px) {
+  .card-extension {
+    flex-direction: column;
+  }
+  .card-extension>div{
+    align-self: center !important;
+  }
+  
+}

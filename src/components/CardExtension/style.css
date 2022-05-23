@@ -1,0 +1,28 @@
+.container-cardExtension {
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 10px 1em hsl(229, 8%, 60%, 0.3);
+}
+
+.container-titleExtension {padding: 1.5em;}
+
+.container-titleExtension img {margin-bottom: 1em;}
+
+.container-titleExtension h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: hsl(229, 31%, 21%);
+  margin-bottom: .5em;
+}
+
+.container-titleExtension p {font-size: .8em;}
+
+.container-button {
+  padding: 1.5em;
+}
+
+.container-button .btn {
+  font-size: .8em;
+}

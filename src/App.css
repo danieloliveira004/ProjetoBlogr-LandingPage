@@ -1,0 +1,163 @@
+/* RESET CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: hsl(229, 8%, 60%);
+}
+
+body, html {
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(229, 8%, 60%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.btn {
+  display: inline-block;
+  font-size: .9em;
+  padding: 12px 28px;
+  border-radius: 6px;
+  box-shadow: 0 5px 5px hsl(229, 8%, 60%, 0.4);
+  white-space: nowrap;
+  border: 2px solid transparent;
+  transition-duration: .5s;
+}
+
+.btn-blue {
+  background: hsl(231, 69%, 60%);
+  color: #fff;
+}
+
+.btn-blue:hover {
+  border-color: hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%);
+  background: #f7f7f7;
+}
+
+.btn-white {
+  background: #f7f7f7;
+  color: hsl(229, 31%, 21%);
+}
+
+.btn-white:hover {
+  border-color: hsl(229, 31%, 21%);
+  background: #f7f7f7;
+}
+
+.btn-red {
+  background: hsl(0, 94%, 66%);
+  color: #f7f7f7;
+}
+
+.btn-red:hover {
+  border-color: hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%);
+  background: #f7f7f7;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title h2 {
+  font-weight: 500;
+  font-size: 1.8em;
+  color: hsl(229, 31%, 21%);
+  padding-bottom: .6em;
+}
+
+.title p {
+  line-height: 1.4em;
+  padding-bottom: 2em;
+}
+
+/* BACKGROUNDS */
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 200%;
+  background: hsl(231, 69%, 60%);
+}
+
+@media (max-width: 900px) {
+  html, body {
+    font-size: 95%;
+  }
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width> 1000px) {
+  html, body {
+    font-size: 95%;
+  }
+}

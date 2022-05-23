@@ -1,0 +1,86 @@
+.container-card-features {
+  position: relative;
+}
+
+.buttons-features {
+  text-align: center;
+}
+
+.buttons-features button {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5em 2.5em;
+  font-size: 1em;
+  background: transparent;
+  border-bottom: 1px solid hsl(229, 8%, 60%, .2);
+  cursor: pointer;
+  margin-bottom: 4em;
+  transition-duration: .8s;
+}
+
+.buttons-features button:hover {
+  color: hsl(0, 94%, 66%);
+  border-color: hsl(0, 94%, 66%);
+}
+
+.buttons-features button.active {
+  color: hsl(229, 31%, 21%);
+  border:none;
+}
+
+.buttons-features button::after {
+  content: '';
+  display: block;
+  height: 5px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  position: absolute;
+  background: hsl(0, 94%, 66%);
+}
+
+.buttons-features button.active::after {
+  animation: activer .5s forwards ease;
+}
+
+/* TEXT IMG*/
+.card-img.animation img{
+  transform: translateX(-50%);
+  animation: move .8s ease;
+}
+
+.text.animation {
+  transform: translateX(50%);
+  animation: move .8s ease;
+}
+ 
+@keyframes activer {
+  to {
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes move{
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .buttons-features button {
+    margin-bottom: 0;
+    width: 100%;
+    
+  }
+
+  .buttons-features button:first-of-type {border-top: 1px solid hsl(229, 8%, 60%, .2);}
+
+  .container-card-features .btn {display: none;}
+
+  .container-card-features {max-width: fit-content;}
+}
